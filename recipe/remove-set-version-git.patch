@@ -1,0 +1,16 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -216,9 +216,10 @@
+   add_subdirectory(examples)
+ endif()
+
+-## Packaging
+-include(SetVersionFromGit)
+-set_version_from_git(PACKAGE_VERSION PACKAGE_TAG)
++## Packaging 
++# Remove git tag due to conda-forge downloads the release tar file directly
++#include(SetVersionFromGit)
++#set_version_from_git(PACKAGE_VERSION PACKAGE_TAG)
+ execute_process(COMMAND dpkg --print-architecture OUTPUT_VARIABLE PACKAGE_ARCH OUTPUT_STRIP_TRAILING_WHITESPACE)
+
+ set(CPACK_PACKAGE_VENDOR "Franka Robotics GmbH")
