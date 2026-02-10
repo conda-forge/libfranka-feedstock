@@ -9,7 +9,6 @@ package:
 source:
   - url: https://github.com/frankarobotics/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
     sha256: e78d0f793132b434bbbcf82b582a64de4ad26cee84a78e6261e92560648b744f
-    patches: remove-set-version-git.patch
 
   # Exact commit hash was obtained from the submodule inside the target libfranka version
   - url: https://github.com/frankarobotics/libfranka-common/archive/d96c221a32c343384cbe2f77c61116ed58b84231.tar.gz
