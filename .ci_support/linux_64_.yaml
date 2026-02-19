@@ -15,6 +15,6 @@ docker_image:
 fmt:
 - '12.1'
 poco:
-- 1.14.2
+- 1.15.0
 target_platform:
 - linux-64
