@@ -32,6 +32,7 @@ requirements:
     - ninja
   host:
     - eigen
+    - eigen-abi-devel
     - poco <1.14
     - fmt
   run_exports:
