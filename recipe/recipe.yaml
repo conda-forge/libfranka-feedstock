@@ -21,7 +21,7 @@ build:
   skip:
     - win
     - osx
-  number: 3
+  number: 4
 
 requirements:
   build:
