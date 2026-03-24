@@ -17,6 +17,6 @@ eigen_abi_devel:
 fmt:
 - '12.1'
 poco:
-- 1.15.0
+- 1.15.1
 target_platform:
 - linux-64
