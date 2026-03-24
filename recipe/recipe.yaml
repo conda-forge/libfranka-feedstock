@@ -1,6 +1,6 @@
 context:
   name: libfranka
-  version: "0.20.5"
+  version: "0.21.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   - url: https://github.com/frankarobotics/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
-    sha256: d4ea786c6d4fdc5d4fc2e1913007608beeaeccc75e6ff945e7e72a119c5aed1b
+    sha256: b8af4c83994d5da0c248281db148d8af39a9de11373ae50d97dec7e822f0e6b9
 
   # Exact commit hash was obtained from the submodule inside the target libfranka version
-  - url: https://github.com/frankarobotics/libfranka-common/archive/d96c221a32c343384cbe2f77c61116ed58b84231.tar.gz
-    sha256: 75f26fc8794e4ae149086b59dda9de9d61cba845c375a51d13dd886ba7a9c104
+  - url: https://github.com/frankarobotics/libfranka-common/archive/2e090a65e51c94a98f9fc82b6ec3d1aa54d0f85f.tar.gz
+    sha256: 25a9d7f1203f7452425f266551b47d30ce043a408feee280403dd7d56d6d6772
     target_directory: common
 
 
@@ -32,6 +32,7 @@ requirements:
     - ninja
   host:
     - eigen
+    - eigen-abi-devel
     - poco
     - pinocchio
     - fmt
