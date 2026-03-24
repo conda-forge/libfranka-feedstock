@@ -1,6 +1,6 @@
 context:
   name: libfranka
-  version: "0.21.0"
+  version: "0.21.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/frankarobotics/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
-    sha256: b8af4c83994d5da0c248281db148d8af39a9de11373ae50d97dec7e822f0e6b9
+    sha256: 737dde350958c9d9dadf7b1a34e18373f580066a436ab90a49c9717e65fb0795
 
   # Exact commit hash was obtained from the submodule inside the target libfranka version
   - url: https://github.com/frankarobotics/libfranka-common/archive/2e090a65e51c94a98f9fc82b6ec3d1aa54d0f85f.tar.gz
