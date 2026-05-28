@@ -9,6 +9,8 @@ package:
 source:
   - url: https://github.com/frankarobotics/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
     sha256: 7587465623e066e67495c76901521a3e77231bd511c391666c1debe001005eba
+    patches: 
+      - eigen5.patch
 
   # Exact commit hash was obtained from the submodule inside the target libfranka version
   - url: https://github.com/frankarobotics/libfranka-common/archive/2e090a65e51c94a98f9fc82b6ec3d1aa54d0f85f.tar.gz
