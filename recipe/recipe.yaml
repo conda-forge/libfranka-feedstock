@@ -1,6 +1,6 @@
 context:
   name: libfranka
-  version: "0.21.2"
+  version: "0.21.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,8 +8,8 @@ package:
 
 source:
   - url: https://github.com/frankarobotics/${{ name }}/archive/refs/tags/${{ version }}.tar.gz
-    sha256: 7587465623e066e67495c76901521a3e77231bd511c391666c1debe001005eba
-    patches: 
+    sha256: 6c89ecae9809afb5d4fe932a54bc24c8c9ce673c4c85186bd8d56e7ce1ebf4c0
+    patches:
       - eigen5.patch
 
   # Exact commit hash was obtained from the submodule inside the target libfranka version
@@ -23,7 +23,7 @@ build:
   skip:
     - win
     - osx
-  number: 2
+  number: 0
 
 requirements:
   build:
